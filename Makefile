@@ -4,6 +4,6 @@ ifeq (, $(shell which dolphin-emu))
 $(error "No dolphin-emu in $(PATH)")
 endif
 
-install:
+install: dolphin_launcher_libretro.so
 	@./install.sh
 
